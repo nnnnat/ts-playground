@@ -11,7 +11,7 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.js]
+[*.{js,ts}]
 max_line_length = 120
 indent_brace_style = 1TBS
 spaces_around_operators = true
