@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "dev": "npx run-p dev:*",
-    "dev:server": "npx nodemon --quiet app.js",
-    "dev:build": "npx tsc app.ts -w",
-    "test": "npx jest"
+    "dev:server": "npx nodemon dist/main.js --quiet",
+    "dev:build": "npx tsc -p config/ -w",
+    "test": "npx jest --config=config/jest.config.js"
   },
   "keywords": [
     "the netz"
